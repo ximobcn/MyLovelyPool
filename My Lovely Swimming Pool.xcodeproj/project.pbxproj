@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21B2022C19C893B7004817C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B2022B19C893B7004817C9 /* Foundation.framework */; };
+		21B2022E19C893B7004817C9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B2022D19C893B7004817C9 /* CoreGraphics.framework */; };
+		21B2023019C893B7004817C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B2022F19C893B7004817C9 /* UIKit.framework */; };
+		21B2023619C893B7004817C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21B2023419C893B7004817C9 /* InfoPlist.strings */; };
+		21B2023819C893B7004817C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2023719C893B7004817C9 /* main.m */; };
+		21B2023C19C893B7004817C9 /* XAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2023B19C893B7004817C9 /* XAAppDelegate.m */; };
+		21B2023F19C893B7004817C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21B2023D19C893B7004817C9 /* Main.storyboard */; };
+		21B2024219C893B7004817C9 /* XAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2024119C893B7004817C9 /* XAViewController.m */; };
+		21B2024419C893B7004817C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21B2024319C893B7004817C9 /* Images.xcassets */; };
+		21B2024B19C893B7004817C9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B2024A19C893B7004817C9 /* XCTest.framework */; };
+		21B2024C19C893B7004817C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B2022B19C893B7004817C9 /* Foundation.framework */; };
+		21B2024D19C893B7004817C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B2022F19C893B7004817C9 /* UIKit.framework */; };
+		21B2025519C893B7004817C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21B2025319C893B7004817C9 /* InfoPlist.strings */; };
+		21B2025719C893B7004817C9 /* My_Lovely_Swimming_PoolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2025619C893B7004817C9 /* My_Lovely_Swimming_PoolTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21B2024E19C893B7004817C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21B2022019C893B7004817C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21B2022719C893B7004817C9;
+			remoteInfo = "My Lovely Swimming Pool";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		21B2022819C893B7004817C9 /* My Lovely Swimming Pool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Lovely Swimming Pool.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21B2022B19C893B7004817C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		21B2022D19C893B7004817C9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		21B2022F19C893B7004817C9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		21B2023319C893B7004817C9 /* My Lovely Swimming Pool-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "My Lovely Swimming Pool-Info.plist"; sourceTree = "<group>"; };
+		21B2023519C893B7004817C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		21B2023719C893B7004817C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		21B2023919C893B7004817C9 /* My Lovely Swimming Pool-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "My Lovely Swimming Pool-Prefix.pch"; sourceTree = "<group>"; };
+		21B2023A19C893B7004817C9 /* XAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XAAppDelegate.h; sourceTree = "<group>"; };
+		21B2023B19C893B7004817C9 /* XAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XAAppDelegate.m; sourceTree = "<group>"; };
+		21B2023E19C893B7004817C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		21B2024019C893B7004817C9 /* XAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XAViewController.h; sourceTree = "<group>"; };
+		21B2024119C893B7004817C9 /* XAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XAViewController.m; sourceTree = "<group>"; };
+		21B2024319C893B7004817C9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		21B2024919C893B7004817C9 /* My Lovely Swimming PoolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My Lovely Swimming PoolTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21B2024A19C893B7004817C9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		21B2025219C893B7004817C9 /* My Lovely Swimming PoolTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "My Lovely Swimming PoolTests-Info.plist"; sourceTree = "<group>"; };
+		21B2025419C893B7004817C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		21B2025619C893B7004817C9 /* My_Lovely_Swimming_PoolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = My_Lovely_Swimming_PoolTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21B2022519C893B7004817C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21B2022E19C893B7004817C9 /* CoreGraphics.framework in Frameworks */,
+				21B2023019C893B7004817C9 /* UIKit.framework in Frameworks */,
+				21B2022C19C893B7004817C9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21B2024619C893B7004817C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21B2024B19C893B7004817C9 /* XCTest.framework in Frameworks */,
+				21B2024D19C893B7004817C9 /* UIKit.framework in Frameworks */,
+				21B2024C19C893B7004817C9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21B2021F19C893B7004817C9 = {
+			isa = PBXGroup;
+			children = (
+				21B2023119C893B7004817C9 /* My Lovely Swimming Pool */,
+				21B2025019C893B7004817C9 /* My Lovely Swimming PoolTests */,
+				21B2022A19C893B7004817C9 /* Frameworks */,
+				21B2022919C893B7004817C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		21B2022919C893B7004817C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21B2022819C893B7004817C9 /* My Lovely Swimming Pool.app */,
+				21B2024919C893B7004817C9 /* My Lovely Swimming PoolTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21B2022A19C893B7004817C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21B2022B19C893B7004817C9 /* Foundation.framework */,
+				21B2022D19C893B7004817C9 /* CoreGraphics.framework */,
+				21B2022F19C893B7004817C9 /* UIKit.framework */,
+				21B2024A19C893B7004817C9 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		21B2023119C893B7004817C9 /* My Lovely Swimming Pool */ = {
+			isa = PBXGroup;
+			children = (
+				21B2023A19C893B7004817C9 /* XAAppDelegate.h */,
+				21B2023B19C893B7004817C9 /* XAAppDelegate.m */,
+				21B2023D19C893B7004817C9 /* Main.storyboard */,
+				21B2024019C893B7004817C9 /* XAViewController.h */,
+				21B2024119C893B7004817C9 /* XAViewController.m */,
+				21B2024319C893B7004817C9 /* Images.xcassets */,
+				21B2023219C893B7004817C9 /* Supporting Files */,
+			);
+			path = "My Lovely Swimming Pool";
+			sourceTree = "<group>";
+		};
+		21B2023219C893B7004817C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				21B2023319C893B7004817C9 /* My Lovely Swimming Pool-Info.plist */,
+				21B2023419C893B7004817C9 /* InfoPlist.strings */,
+				21B2023719C893B7004817C9 /* main.m */,
+				21B2023919C893B7004817C9 /* My Lovely Swimming Pool-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21B2025019C893B7004817C9 /* My Lovely Swimming PoolTests */ = {
+			isa = PBXGroup;
+			children = (
+				21B2025619C893B7004817C9 /* My_Lovely_Swimming_PoolTests.m */,
+				21B2025119C893B7004817C9 /* Supporting Files */,
+			);
+			path = "My Lovely Swimming PoolTests";
+			sourceTree = "<group>";
+		};
+		21B2025119C893B7004817C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				21B2025219C893B7004817C9 /* My Lovely Swimming PoolTests-Info.plist */,
+				21B2025319C893B7004817C9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21B2022719C893B7004817C9 /* My Lovely Swimming Pool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21B2025A19C893B7004817C9 /* Build configuration list for PBXNativeTarget "My Lovely Swimming Pool" */;
+			buildPhases = (
+				21B2022419C893B7004817C9 /* Sources */,
+				21B2022519C893B7004817C9 /* Frameworks */,
+				21B2022619C893B7004817C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "My Lovely Swimming Pool";
+			productName = "My Lovely Swimming Pool";
+			productReference = 21B2022819C893B7004817C9 /* My Lovely Swimming Pool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		21B2024819C893B7004817C9 /* My Lovely Swimming PoolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21B2025D19C893B7004817C9 /* Build configuration list for PBXNativeTarget "My Lovely Swimming PoolTests" */;
+			buildPhases = (
+				21B2024519C893B7004817C9 /* Sources */,
+				21B2024619C893B7004817C9 /* Frameworks */,
+				21B2024719C893B7004817C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21B2024F19C893B7004817C9 /* PBXTargetDependency */,
+			);
+			name = "My Lovely Swimming PoolTests";
+			productName = "My Lovely Swimming PoolTests";
+			productReference = 21B2024919C893B7004817C9 /* My Lovely Swimming PoolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21B2022019C893B7004817C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = XA;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Ximo Alloza";
+				TargetAttributes = {
+					21B2024819C893B7004817C9 = {
+						TestTargetID = 21B2022719C893B7004817C9;
+					};
+				};
+			};
+			buildConfigurationList = 21B2022319C893B7004817C9 /* Build configuration list for PBXProject "My Lovely Swimming Pool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21B2021F19C893B7004817C9;
+			productRefGroup = 21B2022919C893B7004817C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21B2022719C893B7004817C9 /* My Lovely Swimming Pool */,
+				21B2024819C893B7004817C9 /* My Lovely Swimming PoolTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21B2022619C893B7004817C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21B2024419C893B7004817C9 /* Images.xcassets in Resources */,
+				21B2023619C893B7004817C9 /* InfoPlist.strings in Resources */,
+				21B2023F19C893B7004817C9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21B2024719C893B7004817C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21B2025519C893B7004817C9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21B2022419C893B7004817C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21B2023819C893B7004817C9 /* main.m in Sources */,
+				21B2023C19C893B7004817C9 /* XAAppDelegate.m in Sources */,
+				21B2024219C893B7004817C9 /* XAViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21B2024519C893B7004817C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21B2025719C893B7004817C9 /* My_Lovely_Swimming_PoolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21B2024F19C893B7004817C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21B2022719C893B7004817C9 /* My Lovely Swimming Pool */;
+			targetProxy = 21B2024E19C893B7004817C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		21B2023419C893B7004817C9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21B2023519C893B7004817C9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		21B2023D19C893B7004817C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21B2023E19C893B7004817C9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		21B2025319C893B7004817C9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21B2025419C893B7004817C9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21B2025819C893B7004817C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		21B2025919C893B7004817C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21B2025B19C893B7004817C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "My Lovely Swimming Pool/My Lovely Swimming Pool-Prefix.pch";
+				INFOPLIST_FILE = "My Lovely Swimming Pool/My Lovely Swimming Pool-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		21B2025C19C893B7004817C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "My Lovely Swimming Pool/My Lovely Swimming Pool-Prefix.pch";
+				INFOPLIST_FILE = "My Lovely Swimming Pool/My Lovely Swimming Pool-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		21B2025E19C893B7004817C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/My Lovely Swimming Pool.app/My Lovely Swimming Pool";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "My Lovely Swimming Pool/My Lovely Swimming Pool-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "My Lovely Swimming PoolTests/My Lovely Swimming PoolTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		21B2025F19C893B7004817C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/My Lovely Swimming Pool.app/My Lovely Swimming Pool";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "My Lovely Swimming Pool/My Lovely Swimming Pool-Prefix.pch";
+				INFOPLIST_FILE = "My Lovely Swimming PoolTests/My Lovely Swimming PoolTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21B2022319C893B7004817C9 /* Build configuration list for PBXProject "My Lovely Swimming Pool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21B2025819C893B7004817C9 /* Debug */,
+				21B2025919C893B7004817C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21B2025A19C893B7004817C9 /* Build configuration list for PBXNativeTarget "My Lovely Swimming Pool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21B2025B19C893B7004817C9 /* Debug */,
+				21B2025C19C893B7004817C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		21B2025D19C893B7004817C9 /* Build configuration list for PBXNativeTarget "My Lovely Swimming PoolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21B2025E19C893B7004817C9 /* Debug */,
+				21B2025F19C893B7004817C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21B2022019C893B7004817C9 /* Project object */;
+}
