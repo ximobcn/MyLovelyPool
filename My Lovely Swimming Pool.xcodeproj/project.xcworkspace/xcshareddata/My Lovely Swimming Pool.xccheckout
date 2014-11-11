@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EB2D8DA0-DBB4-4A77-AD3E-F63A7EB1CD29</string>
+	<key>IDESourceControlProjectName</key>
+	<string>My Lovely Swimming Pool</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>83D9D7E95819BCB7E4DBF6FE0CA4E7D369B625D0</key>
+		<string>https://github.com/ximobcn/MyLovelyPool.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>My Lovely Swimming Pool.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>83D9D7E95819BCB7E4DBF6FE0CA4E7D369B625D0</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ximobcn/MyLovelyPool.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>83D9D7E95819BCB7E4DBF6FE0CA4E7D369B625D0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>83D9D7E95819BCB7E4DBF6FE0CA4E7D369B625D0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>My%20Lovely%20Swimming%20Pool</string>
+		</dict>
+	</array>
+</dict>
+</plist>
