@@ -1,13 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Mdd-YB-n5J">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment defaultVersion="1808" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ThirstyScriptExtraBoldDemo.otf">
+            <string>ThirstyScriptExtraboldDemo</string>
+            <string>ThirstyScriptExtraboldDemo</string>
+            <string>ThirstyScriptExtraboldDemo</string>
+            <string>ThirstyScriptExtraboldDemo</string>
+            <string>ThirstyScriptExtraboldDemo</string>
+            <string>ThirstyScriptExtraboldDemo</string>
+            <string>ThirstyScriptExtraboldDemo</string>
+            <string>ThirstyScriptExtraboldDemo</string>
+            <string>ThirstyScriptExtraboldDemo</string>
+            <string>ThirstyScriptExtraboldDemo</string>
+            <string>ThirstyScriptExtraboldDemo</string>
+            <string>ThirstyScriptExtraboldDemo</string>
+            <string>ThirstyScriptExtraboldDemo</string>
+            <string>ThirstyScriptExtraboldDemo</string>
+            <string>ThirstyScriptExtraboldDemo</string>
+            <string>ThirstyScriptExtraboldDemo</string>
+            <string>ThirstyScriptExtraboldDemo</string>
+            <string>ThirstyScriptExtraboldDemo</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!-- My Lovley Pool  -->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="XAViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="XAHomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,13 +39,889 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="swimmingPool50.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Fnz-Pj-eVj">
+                                <rect key="frame" x="0.0" y="64" width="320" height="148"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="148" id="NMm-R4-gxu"/>
+                                    <constraint firstAttribute="width" secondItem="Fnz-Pj-eVj" secondAttribute="height" multiplier="80:37" id="WWJ-7C-fgY"/>
+                                    <constraint firstAttribute="width" constant="320" id="ZGb-0J-wsm"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAm-N8-tQU">
+                                <rect key="frame" x="0.0" y="213" width="160" height="143"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="143" id="jux-iH-UTF"/>
+                                    <constraint firstAttribute="width" constant="160" id="kKd-mB-kQk"/>
+                                    <constraint firstAttribute="width" secondItem="vAm-N8-tQU" secondAttribute="height" multiplier="160:143" id="vpS-U3-bNZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ThirstyScriptExtraboldDemo" family="Thirsty Script Extrabold Demo" pointSize="29"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" backgroundImage="quimicos.png">
+                                    <color key="titleColor" red="0.94901960784313721" green="0.2196078431372549" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="quimicosButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="YAa-FO-ver"/>
+                                    <segue destination="4Wt-D8-SOh" kind="push" identifier="homeToQuimicosSegue" id="2dp-e9-uAl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXN-oK-RAt">
+                                <rect key="frame" x="161" y="213" width="160" height="143"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="3cQ-QA-fYZ"/>
+                                    <constraint firstAttribute="height" constant="143" id="U9U-Gj-gcZ"/>
+                                    <constraint firstAttribute="width" secondItem="JXN-oK-RAt" secondAttribute="height" multiplier="160:143" id="eH8-0r-N41"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ThirstyScriptExtraboldDemo" family="Thirsty Script Extrabold Demo" pointSize="29"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" backgroundImage="bomba.png">
+                                    <color key="titleColor" red="0.94901960784313721" green="0.2196078431372549" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="bombaButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mdu-WJ-vNd"/>
+                                    <segue destination="RXW-rm-ncD" kind="push" identifier="homeToBombaSegue" id="rOu-CZ-P3J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n42-5C-hYy">
+                                <rect key="frame" x="161" y="352" width="160" height="143"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="n42-5C-hYy" secondAttribute="height" multiplier="160:143" id="E2t-XU-8Nf"/>
+                                    <constraint firstAttribute="width" constant="160" id="IjF-a7-FIJ"/>
+                                    <constraint firstAttribute="height" constant="143" id="mxs-CA-qVM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ThirstyScriptExtraboldDemo" family="Thirsty Script Extrabold Demo" pointSize="29"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" backgroundImage="contactos.png">
+                                    <color key="titleColor" red="0.94901960784313721" green="0.2196078431372549" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="contactosButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8Pa-O6-LQF"/>
+                                    <segue destination="opu-Ca-8e2" kind="push" identifier="homeToContactosSegue" id="SnM-el-Mj7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8W-VP-RTd">
+                                <rect key="frame" x="3" y="492" width="314" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="V8W-VP-RTd" secondAttribute="height" multiplier="157:39" id="W4G-Ab-k3g"/>
+                                    <constraint firstAttribute="width" constant="314" id="YMA-xd-LUj"/>
+                                    <constraint firstAttribute="height" constant="78" id="xOJ-fb-LZe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ThirstyScriptExtraboldDemo" family="Thirsty Script Extrabold Demo" pointSize="29"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" backgroundImage="consejos.png">
+                                    <color key="titleColor" red="0.94901960784313721" green="0.2196078431372549" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="consejosButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tiy-0B-LI9"/>
+                                    <segue destination="ph8-ZT-BRD" kind="push" identifier="homeToConsejosSegue" id="JKg-qF-N47"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOB-JR-LCL">
+                                <rect key="frame" x="0.0" y="352" width="160" height="143"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="143" id="Enp-oj-niR"/>
+                                    <constraint firstAttribute="width" constant="160" id="Q3O-eq-rgu"/>
+                                    <constraint firstAttribute="width" secondItem="MOB-JR-LCL" secondAttribute="height" multiplier="160:143" id="Zke-fM-C7D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ThirstyScriptExtraboldDemo" family="Thirsty Script Extrabold Demo" pointSize="29"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" backgroundImage="avisos.png">
+                                    <color key="titleColor" red="0.94901960784313721" green="0.2196078431372549" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="agendaButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Vla-P6-ULP"/>
+                                    <segue destination="dOb-Xp-dq2" kind="push" identifier="homeToAgendaSegue" id="Ybc-aY-EBA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28627450980392155" green="0.74901960784313726" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="vAm-N8-tQU" firstAttribute="top" secondItem="Fnz-Pj-eVj" secondAttribute="bottom" constant="1" id="Nhu-pL-b3m"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title=" My Lovley Pool  " id="eUn-lK-Bh7"/>
+                    <connections>
+                        <outlet property="agendaButton" destination="MOB-JR-LCL" id="ZOj-xx-TK2"/>
+                        <outlet property="bombaButton" destination="JXN-oK-RAt" id="8cR-Xa-Bkz"/>
+                        <outlet property="consejosButton" destination="V8W-VP-RTd" id="g75-H2-fp5"/>
+                        <outlet property="contactosButton" destination="n42-5C-hYy" id="nyQ-la-Y3x"/>
+                        <outlet property="headerImage" destination="Fnz-Pj-eVj" id="uca-Qo-yKQ"/>
+                        <outlet property="homeNavigationItem" destination="eUn-lK-Bh7" id="r8X-Xf-CQX"/>
+                        <outlet property="quimicosButton" destination="vAm-N8-tQU" id="5gp-bB-Yqd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="664" y="111"/>
+        </scene>
+        <!--Avisos-->
+        <scene sceneID="zHv-g8-QLs">
+            <objects>
+                <viewController id="dOb-Xp-dq2" customClass="XAAgendaViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xhn-5f-Rgh"/>
+                        <viewControllerLayoutGuide type="bottom" id="d4P-9Y-Ygx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h9j-C0-sWO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="cVP-fB-fmi">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.28627450980000002" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="agendaCell" textLabel="u6L-C8-BRu" detailTextLabel="vbI-89-DJO" style="IBUITableViewCellStyleSubtitle" id="1mx-CJ-tOl">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1mx-CJ-tOl" id="qGf-KZ-af4">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="u6L-C8-BRu">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="ThirstyScriptExtraboldDemo" family="Thirsty Script Extrabold Demo" pointSize="16"/>
+                                                    <color key="textColor" red="0.94901960780000005" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vbI-89-DJO">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="11"/>
+                                                    <color key="textColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.87450980389999999" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="dOb-Xp-dq2" id="XIt-8d-HbM"/>
+                                    <outlet property="delegate" destination="dOb-Xp-dq2" id="QJO-KT-DBw"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28627450980000002" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Avisos" id="7m3-ZM-PWs">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="2e0-WZ-jfu">
+                            <connections>
+                                <action selector="addBarButtonItemPressed:" destination="dOb-Xp-dq2" id="c3H-9O-RfA"/>
+                                <segue destination="0Kp-H4-72m" kind="modal" identifier="agendaToAddAgendaSegue" id="I1N-lZ-42p"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addBarButtonItem" destination="2e0-WZ-jfu" id="iMt-RF-9W0"/>
+                        <outlet property="agendaTableView" destination="cVP-fB-fmi" id="9Od-LO-P9k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SPc-vt-wyu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2440" y="530"/>
+        </scene>
+        <!--Add Agenda View Controller-->
+        <scene sceneID="8ko-hK-gMp">
+            <objects>
+                <viewController id="0Kp-H4-72m" customClass="XAAddAgendaViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cRH-iW-IBK"/>
+                        <viewControllerLayoutGuide type="bottom" id="dZb-WQ-ERf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hRr-YT-bM1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fecha Comienzo:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGH-um-2Tx">
+                                <rect key="frame" x="16" y="70" width="155" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Repetir:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHW-Ra-Idm">
+                                <rect key="frame" x="16" y="276" width="89" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="NG4-cn-b7A">
+                                <rect key="frame" x="0.0" y="99" width="320" height="162"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.87450980389999999" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <date key="date" timeIntervalSinceReferenceDate="433337305.67469501">
+                                    <!--2014-09-25 11:28:25 +0000-->
+                                </date>
+                            </datePicker>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GYt-h1-qdY">
+                                <rect key="frame" x="0.0" y="298" width="320" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="0Kp-H4-72m" id="wg5-WB-cxu"/>
+                                    <outlet property="delegate" destination="0Kp-H4-72m" id="oEa-uc-ip5"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DkO-zz-WXf">
+                                <rect key="frame" x="176" y="480" width="128" height="50"/>
+                                <fontDescription key="fontDescription" name="ThirstyScriptExtraboldDemo" family="Thirsty Script Extrabold Demo" pointSize="18"/>
+                                <state key="normal" title="Cancelar" backgroundImage="boton.png">
+                                    <color key="titleColor" red="0.94901960780000005" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelarButtonPressed:" destination="0Kp-H4-72m" eventType="touchUpInside" id="8ZF-sE-bKB"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre del aviso" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hlt-Wa-o3S">
+                                <rect key="frame" x="16" y="28" width="288" height="30"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="0Kp-H4-72m" id="6H6-vf-5d5"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pew-wf-eRp">
+                                <rect key="frame" x="16" y="480" width="128" height="50"/>
+                                <fontDescription key="fontDescription" name="ThirstyScriptExtraboldDemo" family="Thirsty Script Extrabold Demo" pointSize="18"/>
+                                <state key="normal" title="Guardar" backgroundImage="boton.png">
+                                    <color key="titleColor" red="0.94901960780000005" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="guardarButtonPressed:" destination="0Kp-H4-72m" eventType="touchUpInside" id="8EF-5O-L76"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28627450980000002" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Tgl-Zh-4wG"/>
+                    <connections>
+                        <outlet property="cancelarButton" destination="DkO-zz-WXf" id="ITp-1b-DbH"/>
+                        <outlet property="eventoDatePicker" destination="NG4-cn-b7A" id="9yB-Ao-6pm"/>
+                        <outlet property="frecuenciaPickerView" destination="GYt-h1-qdY" id="y1q-PA-6Qi"/>
+                        <outlet property="guardarButton" destination="pew-wf-eRp" id="Yii-sM-JKG"/>
+                        <outlet property="nombreEventoTextField" destination="Hlt-Wa-o3S" id="Xzc-dX-N6m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KS0-Jq-0Bb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2871" y="185"/>
+        </scene>
+        <!--Contactos Detalles View Controller-->
+        <scene sceneID="meV-FZ-Bor">
+            <objects>
+                <viewController id="n7e-t2-u8r" customClass="XAContactosDetallesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rAE-l2-Oi0"/>
+                        <viewControllerLayoutGuide type="bottom" id="iDV-Bm-oqA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bcr-Hc-zwb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCg-9y-Sbc">
+                                <rect key="frame" x="134" y="72" width="180" height="21"/>
+                                <fontDescription key="fontDescription" name="ThirstyScriptExtraboldDemo" family="Thirsty Script Extrabold Demo" pointSize="18"/>
+                                <color key="textColor" red="0.94901960780000005" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rc9-Ci-hZR">
+                                <rect key="frame" x="134" y="101" width="180" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZqK-SV-gXv">
+                                <rect key="frame" x="134" y="130" width="180" height="61"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ET1-t4-ee3">
+                                <rect key="frame" x="0.0" y="292" width="320" height="276"/>
+                                <connections>
+                                    <outlet property="delegate" destination="n7e-t2-u8r" id="SjP-MH-jnu"/>
+                                </connections>
+                            </mapView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Notas..." translatesAutoresizingMaskIntoConstraints="NO" id="vBM-y8-RK9">
+                                <rect key="frame" x="7" y="198" width="307" height="86"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.87450980389999999" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="LZ8-UI-9qC">
+                                <rect key="frame" x="150" y="436" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hn5-mt-l1z">
+                                <rect key="frame" x="7" y="72" width="120" height="120"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28627450980000002" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.28627450980000002" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IYv-kP-1hn"/>
+                    <connections>
+                        <outlet property="contactoImageView" destination="hn5-mt-l1z" id="MpX-rH-Enr"/>
+                        <outlet property="contactoMKMapView" destination="ET1-t4-ee3" id="eHj-4u-v7D"/>
+                        <outlet property="direccionLabel" destination="ZqK-SV-gXv" id="08z-10-AHc"/>
+                        <outlet property="indicatorView" destination="LZ8-UI-9qC" id="j1a-uB-ev4"/>
+                        <outlet property="nombreContactoLabel" destination="VCg-9y-Sbc" id="DPh-gu-8lc"/>
+                        <outlet property="notasTextView" destination="vBM-y8-RK9" id="VqL-Tf-q2e"/>
+                        <outlet property="subnombreContactoLabel" destination="Rc9-Ci-hZR" id="Md2-4u-vpd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wb3-hN-wDs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1611" y="766"/>
+        </scene>
+        <!-- Químicos -->
+        <scene sceneID="E9G-8m-A9I">
+            <objects>
+                <viewController id="4Wt-D8-SOh" customClass="XAQuimicosViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D01-C4-511"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cpx-fj-sr7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tWz-FF-LSu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="akW-H7-guB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.28627450980000002" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="separatorColor" red="0.28627450980000002" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="quimicoCell" textLabel="1hH-3a-UXS" detailTextLabel="A5j-iv-KYJ" style="IBUITableViewCellStyleSubtitle" id="T66-yc-MLm">
+                                        <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="T66-yc-MLm" id="yM8-12-fR3">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1hH-3a-UXS">
+                                                    <rect key="frame" x="15" y="3" width="34" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="ThirstyScriptExtraboldDemo" family="Thirsty Script Extrabold Demo" pointSize="20"/>
+                                                    <color key="textColor" red="0.94901960780000005" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                    <size key="shadowOffset" width="1" height="1"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="A5j-iv-KYJ">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="11"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.87450980389999999" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="a2O-Vu-VGo" kind="push" id="Fyb-zW-qvr"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="4Wt-D8-SOh" id="82i-fL-DuZ"/>
+                                    <outlet property="delegate" destination="4Wt-D8-SOh" id="YjY-tF-fwo"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28627450980000002" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title=" Químicos " id="qPv-52-KP1"/>
+                    <connections>
+                        <outlet property="tableView" destination="akW-H7-guB" id="KVf-3T-JT5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ud-Mf-ufV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039" y="-426"/>
+        </scene>
+        <!--Quimicos Detalle View Controller-->
+        <scene sceneID="R1W-kP-anW">
+            <objects>
+                <viewController id="a2O-Vu-VGo" customClass="XAQuimicosDetalleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rLU-OM-Pz2"/>
+                        <viewControllerLayoutGuide type="bottom" id="tof-k3-dTC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="crw-m0-Zxb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1d-ZS-iik">
+                                <rect key="frame" x="16" y="72" width="288" height="21"/>
+                                <fontDescription key="fontDescription" name="ThirstyScriptExtraboldDemo" family="Thirsty Script Extrabold Demo" pointSize="20"/>
+                                <color key="textColor" red="0.94901960780000005" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IX-uD-exH">
+                                <rect key="frame" x="16" y="99" width="288" height="47"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RIs-v5-GzI">
+                                <rect key="frame" x="16" y="154" width="288" height="128"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JRu-nb-Vtm">
+                                <rect key="frame" x="16" y="290" width="288" height="270"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.87450980389999999" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28627450980000002" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8wI-7m-kDe"/>
+                    <connections>
+                        <outlet property="quimicoImageView" destination="RIs-v5-GzI" id="d3R-j7-DAb"/>
+                        <outlet property="quimicoTextView" destination="JRu-nb-Vtm" id="1hk-3r-ocR"/>
+                        <outlet property="subtituloLabel" destination="7IX-uD-exH" id="E37-SK-8om"/>
+                        <outlet property="tituloLabel" destination="Q1d-ZS-iik" id="mcn-cO-ecv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ylu-SC-3CL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1479" y="-382"/>
+        </scene>
+        <!--Bomba-->
+        <scene sceneID="Bpo-4Y-2tx">
+            <objects>
+                <viewController id="RXW-rm-ncD" customClass="XABombaViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GqG-Bk-tps"/>
+                        <viewControllerLayoutGuide type="bottom" id="cti-ss-NvX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rnx-cl-YIm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="6sm-ay-N0c">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.28627450980000002" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="separatorColor" red="0.28627450980000002" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="olT-ID-rnD" detailTextLabel="QE5-Xr-CpK" style="IBUITableViewCellStyleSubtitle" id="755-vp-UeM">
+                                        <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="755-vp-UeM" id="hh3-Yi-KXq">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="olT-ID-rnD">
+                                                    <rect key="frame" x="15" y="3" width="34" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="ThirstyScriptExtraboldDemo" family="Thirsty Script Extrabold Demo" pointSize="18"/>
+                                                    <color key="textColor" red="0.94901960780000005" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QE5-Xr-CpK">
+                                                    <rect key="frame" x="15" y="25" width="43" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.87450980389999999" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="nPt-vL-W2N" kind="push" identifier="bombaToBombaDetalleSegue" id="hUu-aK-MKF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="RXW-rm-ncD" id="AhL-id-b6Q"/>
+                                    <outlet property="delegate" destination="RXW-rm-ncD" id="rFV-td-uIc"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28627450980000002" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bomba" id="b7e-1F-UTN"/>
+                    <connections>
+                        <outlet property="bombaTableView" destination="6sm-ay-N0c" id="cu6-81-gOl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kEa-If-A9N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1889" y="-109"/>
+        </scene>
+        <!--Bomba Detalles View Controller-->
+        <scene sceneID="mvt-Na-pPU">
+            <objects>
+                <viewController id="nPt-vL-W2N" customClass="XABombaDetallesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yVm-tc-nRj"/>
+                        <viewControllerLayoutGuide type="bottom" id="YpR-lB-Ada"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t11-7i-l5O">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MG2-ug-VaU">
+                                <rect key="frame" x="16" y="72" width="288" height="21"/>
+                                <fontDescription key="fontDescription" name="ThirstyScriptExtraboldDemo" family="Thirsty Script Extrabold Demo" pointSize="20"/>
+                                <color key="textColor" red="0.94901960780000005" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgN-tY-7Co">
+                                <rect key="frame" x="16" y="101" width="288" height="45"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8HR-g5-qR9">
+                                <rect key="frame" x="16" y="154" width="288" height="128"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yBZ-jW-sEY">
+                                <rect key="frame" x="16" y="290" width="288" height="270"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.87450980389999999" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28627450980000002" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uwk-vY-HPb"/>
+                    <connections>
+                        <outlet property="bombaImageView" destination="8HR-g5-qR9" id="gbc-vV-vVg"/>
+                        <outlet property="bombaTextView" destination="yBZ-jW-sEY" id="pGO-54-iLw"/>
+                        <outlet property="subtituloLabel" destination="DgN-tY-7Co" id="zSG-mR-c6T"/>
+                        <outlet property="tituloLabel" destination="MG2-ug-VaU" id="FFA-Bq-jbd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jve-gj-xWV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2331" y="-109"/>
+        </scene>
+        <!--Consejos-->
+        <scene sceneID="7AK-g7-MVr">
+            <objects>
+                <viewController id="ph8-ZT-BRD" customClass="XAConsejosViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="clW-v0-FOX"/>
+                        <viewControllerLayoutGuide type="bottom" id="MqA-89-ppB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CjO-QD-a7T">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="im9-8a-QrX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.28627450980000002" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="separatorColor" red="0.28627450980000002" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="center" selectionStyle="none" indentationWidth="10" reuseIdentifier="consejosCell" textLabel="nBM-Ie-L0e" detailTextLabel="Z5r-UR-HI1" style="IBUITableViewCellStyleSubtitle" id="5BO-Po-zPW">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5BO-Po-zPW" id="Swv-fc-3od">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="TopLeft" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nBM-Ie-L0e">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="ThirstyScriptExtraboldDemo" family="Thirsty Script Extrabold Demo" pointSize="18"/>
+                                                    <color key="textColor" red="0.94901960780000005" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="center" text="Subtitle" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Z5r-UR-HI1">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="11"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.87450980389999999" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ph8-ZT-BRD" id="VNi-XU-JJk"/>
+                                    <outlet property="delegate" destination="ph8-ZT-BRD" id="z6P-qc-Fkj"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28627450980000002" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Consejos" id="ELn-bm-cg8"/>
+                    <connections>
+                        <outlet property="consejosTableView" destination="im9-8a-QrX" id="4dM-Um-uaX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3xQ-Sh-6dJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664" y="894"/>
+        </scene>
+        <!--Contactos-->
+        <scene sceneID="ttl-s2-T3d">
+            <objects>
+                <viewController id="opu-Ca-8e2" customClass="XAContactosViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TIa-5y-74c"/>
+                        <viewControllerLayoutGuide type="bottom" id="XNt-4Y-2zD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mnb-qP-dOp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Au8-py-Ofk">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.28627450980000002" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="separatorColor" red="0.28627450980000002" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="contactoCell" textLabel="TcI-Vc-q5H" detailTextLabel="fXS-pg-39K" style="IBUITableViewCellStyleSubtitle" id="cRn-SD-uZx">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cRn-SD-uZx" id="DBK-3S-ZFm">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TcI-Vc-q5H">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="ThirstyScriptExtraboldDemo" family="Thirsty Script Extrabold Demo" pointSize="16"/>
+                                                    <color key="textColor" red="0.94901960780000005" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <size key="shadowOffset" width="0.0" height="1"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fXS-pg-39K">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="11"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.87450980389999999" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="n7e-t2-u8r" kind="push" identifier="contactosToContactosDetalleSegue" id="bDA-XW-Vgf"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="opu-Ca-8e2" id="hhf-yY-9qI"/>
+                                    <outlet property="delegate" destination="opu-Ca-8e2" id="vkW-AK-Bij"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28627450980000002" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Contactos" id="uS8-O1-Isl">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Vrz-8O-edU">
+                            <connections>
+                                <action selector="addBarButtonItemPressed:" destination="opu-Ca-8e2" id="08d-rO-540"/>
+                                <segue destination="oTm-Xc-AVg" kind="modal" identifier="contactosToAddContactosSegue" id="3Vl-8A-Q9i"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addButtonItem" destination="Vrz-8O-edU" id="K6j-ib-Dn2"/>
+                        <outlet property="contactosTableView" destination="Au8-py-Ofk" id="ayy-c9-drw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7rL-As-ipI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1181" y="594"/>
+        </scene>
+        <!--Add Contacto View Controller-->
+        <scene sceneID="34T-Ii-XPA">
+            <objects>
+                <viewController id="oTm-Xc-AVg" customClass="XAAddContactoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VVe-gF-DeA"/>
+                        <viewControllerLayoutGuide type="bottom" id="e1A-h6-05S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cq4-Mb-GF9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre/Empresa:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGc-iC-3NQ">
+                                <rect key="frame" x="16" y="31" width="288" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Persona Contacto:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTG-cj-qoT">
+                                <rect key="frame" x="16" y="98" width="288" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dirección:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agc-EC-XB8">
+                                <rect key="frame" x="16" y="165" width="288" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RYs-3N-Fkb">
+                                <rect key="frame" x="16" y="60" width="288" height="30"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="oTm-Xc-AVg" id="ASA-Bt-kL8"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WCi-YA-XPb">
+                                <rect key="frame" x="16" y="127" width="288" height="30"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="oTm-Xc-AVg" id="BdB-UO-bFp"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre de la calle" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vVS-vq-9OB">
+                                <rect key="frame" x="16" y="194" width="288" height="30"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="oTm-Xc-AVg" id="bEI-53-9ec"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notas:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bg-g2-7mh">
+                                <rect key="frame" x="16" y="373" width="214" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3cd-TV-sJ4">
+                                <rect key="frame" x="16" y="402" width="288" height="30"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="oTm-Xc-AVg" id="Pte-9V-ES5"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Número" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j8U-rU-pr3">
+                                <rect key="frame" x="16" y="232" width="140" height="30"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="oTm-Xc-AVg" id="t3M-x2-fX0"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Código Postal" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YFf-QP-Jw9">
+                                <rect key="frame" x="164" y="232" width="140" height="30"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="oTm-Xc-AVg" id="FV7-FH-xLS"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Población" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y7j-5d-Qoc">
+                                <rect key="frame" x="16" y="270" width="288" height="30"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.93333333330000001" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="oTm-Xc-AVg" id="NLn-o9-gsC"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pL0-z4-yUg">
+                                <rect key="frame" x="176" y="491" width="128" height="50"/>
+                                <fontDescription key="fontDescription" name="ThirstyScriptExtraboldDemo" family="Thirsty Script Extrabold Demo" pointSize="18"/>
+                                <state key="normal" title="Cancel" backgroundImage="boton.png">
+                                    <color key="titleColor" red="0.94901960780000005" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelContactoButtonPressed:" destination="oTm-Xc-AVg" eventType="touchUpInside" id="tzE-DR-wdc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fre-wl-sgO">
+                                <rect key="frame" x="16" y="491" width="128" height="50"/>
+                                <fontDescription key="fontDescription" name="ThirstyScriptExtraboldDemo" family="Thirsty Script Extrabold Demo" pointSize="18"/>
+                                <state key="normal" title="Add" backgroundImage="boton.png">
+                                    <color key="titleColor" red="0.94901960780000005" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addContactoButtonPressed:" destination="oTm-Xc-AVg" eventType="touchUpInside" id="9Yc-27-IK2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nip-7l-xEH">
+                                <rect key="frame" x="14" y="312" width="290" height="53"/>
+                                <fontDescription key="fontDescription" name="ThirstyScriptExtraboldDemo" family="Thirsty Script Extrabold Demo" pointSize="20"/>
+                                <state key="normal" title="Seleccionar Foto" backgroundImage="botonLargo.png">
+                                    <color key="titleColor" red="0.94901960780000005" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addPhotoButtonPressed:" destination="oTm-Xc-AVg" eventType="touchUpInside" id="7qr-Jr-5Rp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28627450980000002" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BcY-3m-zgd"/>
+                    <connections>
+                        <outlet property="addContactoButton" destination="fre-wl-sgO" id="g0w-i9-GXv"/>
+                        <outlet property="cancelContactoButton" destination="pL0-z4-yUg" id="VEx-dE-MRz"/>
+                        <outlet property="codigoPostalTextField" destination="YFf-QP-Jw9" id="XW7-si-F9z"/>
+                        <outlet property="contactoTextField" destination="WCi-YA-XPb" id="UDY-Xc-PcE"/>
+                        <outlet property="direccionTextField" destination="vVS-vq-9OB" id="HpV-fV-opa"/>
+                        <outlet property="nombreTextField" destination="RYs-3N-Fkb" id="XRq-cI-ya9"/>
+                        <outlet property="notasTextField" destination="3cd-TV-sJ4" id="iNT-bb-d0A"/>
+                        <outlet property="numeroTextField" destination="j8U-rU-pr3" id="pRe-6d-cl9"/>
+                        <outlet property="poblacionTextField" destination="y7j-5d-Qoc" id="gt5-Ol-Atu"/>
+                        <outlet property="seleccionarFotoButton" destination="nip-7l-xEH" id="ngc-IK-UrU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6dR-6g-xK7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1253" y="1269"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Mi1-1Q-avd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mdd-YB-n5J" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jcm-3d-Fy6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="BsJ-MP-FVc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lq2-A7-VFD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="229" y="111"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="avisos.png" width="301" height="302"/>
+        <image name="bomba.png" width="306" height="307"/>
+        <image name="boton.png" width="268" height="86"/>
+        <image name="botonLargo.png" width="616" height="125"/>
+        <image name="consejos.png" width="520" height="157"/>
+        <image name="contactos.png" width="304" height="305"/>
+        <image name="quimicos.png" width="304" height="303"/>
+        <image name="swimmingPool50.jpg" width="500" height="320"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

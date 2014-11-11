@@ -1,5 +1,5 @@
 //
-//  XAViewController.h
+//  XAConsejosViewController.h
 //  My Lovely Swimming Pool
 //
 //  Created by Ximo on 16/09/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XAViewController : UIViewController
+@interface XAConsejosViewController : UIViewController
 
 @end
